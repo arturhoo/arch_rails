@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Customer' do
+describe Customer do
   let(:customer) { Customer.new(name: 'John Johnes', email: 'john@example.com') }
   subject { customer }
 
