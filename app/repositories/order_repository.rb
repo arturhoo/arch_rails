@@ -1,5 +1,6 @@
 class OrderRepository
   def all
+    OrderRecord.all.map { |o| Order.new(o.attributes) }
   end
 
   def add(order)
