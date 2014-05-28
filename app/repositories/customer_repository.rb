@@ -15,7 +15,3 @@ class CustomerRepository
     Customer.new(ar_customer.attributes)
   end
 end
-
-class CustomerRecord < ActiveRecord::Base
-  self.table_name = 'customers'
-end
