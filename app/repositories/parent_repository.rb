@@ -1,6 +1,8 @@
-require 'active_record'
-
 class ParentRepository
+  def all
+    ParentRecord.all.map { |p| Parent.new(p.attributes) }
+  end
+
   def add(parent)
     fail 'invalid parent' unless parent.valid?
     ar_parent = ParentRecord.create(parent.attributes)

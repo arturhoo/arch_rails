@@ -1,6 +1,7 @@
 class Parent
   include ActiveAttr::Model
 
+  attribute :id
   attribute :name
   attribute :email
 
