@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'active_attr'
+gem 'coveralls', require: false
 
 group :development do
   gem 'better_errors'
