@@ -1,4 +1,4 @@
-class Parent
+class Customer
   include ActiveAttr::Model
 
   attribute :id

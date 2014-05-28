@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140528143455) do
 
-  create_table "parents", force: true do |t|
+  create_table "customers", force: true do |t|
     t.string "name"
     t.string "email"
   end
