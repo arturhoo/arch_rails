@@ -6,7 +6,7 @@ describe OrderRepository do
     @valid_order = double(
       'valid_order',
       valid?: true,
-      attributes: { value: 100, customer_id: 1 }
+      attributes: { }
     )
     allow(@valid_order).to receive(:id=)
     allow(@valid_order).to receive(:kind_of?).and_return { Order }
@@ -20,7 +20,7 @@ describe OrderRepository do
   it { should respond_to :add }
   it { should respond_to :find_by_id }
 
-  describe '#add' do
+  describe '#all' do
     before do
       repo.add(@valid_order)
     end
@@ -35,18 +35,18 @@ describe OrderRepository do
   end
 
   describe '#add' do
-    context 'given an invalid customer' do
-      it 'does not add the customer' do
+    context 'given an invalid order' do
+      it 'does not add the order' do
         expect { repo.add(@invalid_order) }.to raise_error
       end
     end
 
-    context 'given a valid customer' do
-      it 'adds the customer' do
+    context 'given a valid order' do
+      it 'adds the order' do
         expect { repo.add(@valid_order) }.not_to raise_error
       end
 
-      it 'returns a customer object' do
+      it 'returns a Order object' do
         expect(repo.add(@valid_order)).to be_kind_of Order
       end
     end
@@ -58,7 +58,7 @@ describe OrderRepository do
       repo.add(@valid_order)
     end
 
-    it 'returns a customer object' do
+    it 'returns a Order object' do
       expect(repo.find_by_id(1)).to be_kind_of Order
     end
 
