@@ -1,7 +1,7 @@
 # ArchRails
 
 [![Build Status](https://travis-ci.org/arturhoo/arch_rails.svg?branch=master)](https://travis-ci.org/arturhoo/arch_rails)
-[![Code Climate](https://codeclimate.com/github/arturhoo/arch_rails.png)](https://codeclimate.com/github/arturhoo/arch_rails)
+[![Code Climate](http://img.shields.io/codeclimate/github/arturhoo/arch_rails.svg)](https://codeclimate.com/github/arturhoo/arch_rails)
 [![Coverage Status](https://img.shields.io/coveralls/arturhoo/arch_rails.svg)](https://coveralls.io/r/arturhoo/arch_rails)
 [![Dependency Status](https://gemnasium.com/arturhoo/arch_rails.svg)](https://gemnasium.com/arturhoo/arch_rails)
 
