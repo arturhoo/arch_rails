@@ -1,6 +1,6 @@
 # ArchRails
 
-An attempt on applying DDD and Hexagonal principles to Rails, leaving the application less monolithic and tied to the framework.
+An attempt on applying DDD and Hexagonal principles to Rails, leaving the application less monolithic and less tied to the framework.
 
 ## Inspirations
 
